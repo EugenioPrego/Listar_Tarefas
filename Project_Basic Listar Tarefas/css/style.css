@@ -1,0 +1,107 @@
+
+ *{
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(255, 255, 255, 0.521);
+    }
+
+    h1{
+        text-align: center;
+        font-size: larger;
+    }
+
+    header{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        width: 90%;
+        /* border: 1px solid red; */
+        margin: auto auto;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    input{
+        height: 10vh;
+        width: 80%;
+        font-size: 2rem;
+        padding-left: 10%;
+    }
+
+    button{
+        width: 20%;
+        cursor: pointer;
+        background-color: green;
+        color: white;
+        font-weight: bold;
+        border: none;
+        height: 10vh;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    main{
+        display: flex;
+        flex-flow: row wrap;
+        width: 90%;
+        margin:  auto auto;
+        /* border: 1px solid blue; */
+        padding-top: 10vh;
+    }
+
+    .item{
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        height: 10vh;
+        width: 100%;
+        box-shadow: 0 0 5vh #ccc;
+        margin-bottom: 5%;
+    }
+
+    .item_icone{
+        flex: 20%;    
+        /* border: 1px solid red; */
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .item_nome{
+        flex: 65%;    
+        /* border: 1px solid deeppink; */
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+     .item_botao{
+        flex: 25%;    
+        /* border: 1px solid green; */
+    }
+    .delete{
+        background: red;
+        color: white;
+        border: none;
+        padding: 10px;
+        height: 10vh;
+        width: 100%;
+    }
+
+    .item.clicado{
+        background: #d4f6d9;
+    }
+
+    
+    .item.clicado .item_nome{
+        text-decoration: line-through;
+        color: gray;
+    }
+
+    .bi-check-circle{
+        color: green;
+    }
